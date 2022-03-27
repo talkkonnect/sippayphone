@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="sippayphone/xml">
+  <global>
+    <software>
+      <settings>
+        <singleinstance>true</singleinstance>
+        <outputdevice>Speaker</outputdevice>
+        <logfilenameandpath>/var/log/sippayphone.log</logfilenameandpath>
+        <logging>screenwithlineno</logging>
+        <loglevel>debug</loglevel>
+      </settings>
+      <sounds>
+        <sound event="joinedchannel" file="/home/talkkonnect/gocode/src/github.com/talkkonnect/talkkonnect/soundfiles/events/appear.wav" volume="10" blocking="false" enabled="true"/>
+   	<input enabled="true">
+          <sound event="txpttstart"   file="/home/talkkonnect/gocode/src/github.com/talkkonnect/talkkonnect/soundfiles/rogerbeeps/YellowJacket.wav" enabled="true"/>
+         </input>
+      </sounds>
+      <printvariables>
+        <printaccount>false</printaccount>
+      </printvariables>
+    </software>
+    <hardware targetboard="rpi">
+      <io>
+        <pins>
+          <pin direction="output" device="led/relay"    name="voiceactivity" pinno="2"  type="gpio" chipid="0" enabled="true"/>
+          <pin direction="output" device="led/relay"    name="participants"  pinno="3"  type="gpio" chipid="0" enabled="true"/>
+          <pin direction="output" device="led/relay"    name="transmit"      pinno="4"  type="gpio" chipid="0" enabled="true"/>
+        </pins>
+      </io>
+      <heartbeat enabled="false">
+        <heartbeatledpin/>
+        <periodmsecs>2000</periodmsecs>
+        <ledonmsecs>1000</ledonmsecs>
+        <ledoffmsecs>1010</ledoffmsecs>
+      </heartbeat>
+      <lcd enabled="false">
+        <lcdinterfacetype>parallel</lcdinterfacetype>
+        <lcdi2caddress>63</lcdi2caddress>
+        <lcdbacklighttimerenabled>false</lcdbacklighttimerenabled>
+        <lcdbacklighttimeoutsecs>30</lcdbacklighttimeoutsecs>
+        <lcdbacklightpin>6</lcdbacklightpin>
+        <lcdrspin>7</lcdrspin>
+        <lcdepin>8</lcdepin>
+        <lcdd4pin>25</lcdd4pin>
+        <lcdd5pin>24</lcdd5pin>
+        <lcdd6pin>23</lcdd6pin>
+        <lcdd7pin>18</lcdd7pin>
+      </lcd>
+      <usbkeyboard enabled="true">
+        <!--<usbkeyboarddevpath>/dev/input/event0</usbkeyboarddevpath>-->
+        <usbkeyboarddevpath>/dev/input/event0</usbkeyboarddevpath>
+        <numlockscanid>69</numlockscanid>
+      </usbkeyboard>
+      <keyboard>
+        <command>
+          <ttykeyboard scanid="48" keylabel="0" enabled="true"/>
+          <usbkeyboard scanid="82" keylabel="0" enabled="true"/>
+        </command>
+        <command action="voicetargetset" paramname="voicetargetset" paramvalue="1" enabled="true">
+          <ttykeyboard scanid="49" keylabel="1" enabled="true"/>
+          <usbkeyboard scanid="79" keylabel="1" enabled="true"/>
+        </command>
+        <command action="voicetargetset" paramname="voicetargetset" paramvalue="2" enabled="true">
+          <ttykeyboard scanid="50" keylabel="2" enabled="true"/>
+          <usbkeyboard scanid="80" keylabel="2" enabled="true"/>
+        </command>
+        <command action="voicetargetset" paramname="voicetargetset" paramvalue="3" enabled="true">
+          <ttykeyboard scanid="51" keylabel="3" enabled="true"/>
+          <usbkeyboard scanid="81" keylabel="3" enabled="true"/>
+        </command>
+        <command action="voicetargetset" paramname="voicetargetset" paramvalue="4" enabled="true">
+          <ttykeyboard scanid="52" keylabel="4" enabled="true"/>
+          <usbkeyboard scanid="75" keylabel="4" enabled="true"/>
+        </command>
+        <command action="voicetargetset" paramname="voicetargetset" paramvalue="5" enabled="true">
+          <ttykeyboard scanid="53" keylabel="5" enabled="true"/>
+          <usbkeyboard scanid="76" keylabel="5" enabled="true"/>
+        </command>
+        <command action="voicetargetset" paramname="voicetargetset" paramvalue="6" enabled="true">
+          <ttykeyboard scanid="54" keylabel="6" enabled="true"/>
+          <usbkeyboard scanid="77" keylabel="6" enabled="true"/>
+        </command>
+        <command action="voicetargetset" paramname="voicetargetset" paramvalue="7" enabled="true">
+          <ttykeyboard scanid="55" keylabel="7" enabled="true"/>
+          <usbkeyboard scanid="71" keylabel="7" enabled="true"/>
+        </command>
+        <command action="voicetargetset" paramname="voicetargetset" paramvalue="8" enabled="true">
+          <ttykeyboard scanid="56" keylabel="8" enabled="true"/>
+          <usbkeyboard scanid="72" keylabel="8" enabled="true"/>
+        </command>
+        <command action="voicetargetset" paramname="voicetargetset" paramvalue="9" enabled="true">
+          <ttykeyboard scanid="57" keylabel="9" enabled="true"/>
+          <usbkeyboard scanid="73" keylabel="9" enabled="true"/>
+        </command>
+      </keyboard>
+    </hardware>
+    <multimedia>
+        <media>
+          <source name="1st-song" file="http://prdonline.prd.go.th:8200" volume="10" duration="0" offset="0" loop="1" blocking="false" enabled="true"/>
+          <source name="2nd-song" file="/root/whateveryoulike.mp3" volume="10" duration="0" offset="0" loop="1" blocking="false" enabled="false"/>
+        </media>
+    </multimedia>
+  </global>
+</document>
