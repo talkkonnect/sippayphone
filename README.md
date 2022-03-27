@@ -1,7 +1,7 @@
 SIPPAYPHONE 
 ===========
 
-A golang API to Control baresip over tcp socket
+A golang API to Control baresip over tcp socket so as to build a working hard phone using the Raspberry Pi
 
 This software is written in [Go programming language](https://golang.org/) to control baresip via tcp socket with json 
 
