@@ -22,7 +22,7 @@ FreeSWITCH server.
 
 ## Questions & Contributing 
 We invite interested individuals to provide feedback and improvements to the project. 
-You will first have to build baresip on linux from (https://github.com/baresip/baresip)
+You will first have to build baresip on linux from [baresip repository](https://github.com/baresip/baresip)
 
 Currently we do not have a WIKI so send feedback to <suvir@talkkonnect.com> or open and Issue in github
 you can also check my blog  [www.talkkonnect.com](https://www.talkkonnect.com) for updates on the project
