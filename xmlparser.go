@@ -47,11 +47,14 @@ type ConfigStruct struct {
 	Global  struct {
 		Software struct {
 			Settings struct {
-				SingleInstance     bool   `xml:"singleinstance"`
-				OutputDevice       string `xml:"outputdevice"`
-				LogFilenameAndPath string `xml:"logfilenameandpath"`
-				Logging            string `xml:"logging"`
-				Loglevel           string `xml:"loglevel"`
+				SingleInstance          bool   `xml:"singleinstance"`
+				OutputDevice            string `xml:"outputdevice"`
+				OutputDeviceShort       string `xml:"outputdeviceshort"`
+				OutputVolControlDevice  string `xml:"outputvolcontroldevice"`
+				OutputMuteControlDevice string `xml:"outputmutecontroldevice"`
+				LogFilenameAndPath      string `xml:"logfilenameandpath"`
+				Logging                 string `xml:"logging"`
+				Loglevel                string `xml:"loglevel"`
 			} `xml:"settings"`
 			Sounds struct {
 				Sound []struct {

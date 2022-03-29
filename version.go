@@ -32,8 +32,8 @@
 package sippayphone
 
 const (
-	talkkonnectVersion  string = "0.0.1"
-	talkkonnectReleased string = "Mar 27 2022"
+	sippayphoneVersion  string = "0.0.2"
+	sippayphoneReleased string = "Mar 29 2022"
 )
 
 /* Release Notes
