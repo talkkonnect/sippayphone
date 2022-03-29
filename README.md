@@ -9,7 +9,8 @@ This library written in [Go programming language](https://golang.org/) to contro
 
 Compatibility
 -------------
-Tested on Raspberry PI 3 (model B+)
+This is still a work under progress and in very early stages!
+Developing on Raspberry PI 3 (model B+)
 
 Story and Inspiration
 ---------------------
@@ -25,7 +26,7 @@ You will first have to build baresip on linux from
 Currently we do not have a WIKI so send feedback to <suvir@talkkonnect.com> or open and Issue in github
 you can also check my blog  [www.talkkonnect.com](https://www.talkkonnect.com) for updates on the project
 	
-Thank you all for your kind feedback sent along with some pictures and use cases for talkkonnect.
+Thank you all for your kind feedback sent along with some pictures and use cases for sippyphone.
 
 ## License 
 SIPPAYPHONE is open source and available under the MPL V2.00 license.
